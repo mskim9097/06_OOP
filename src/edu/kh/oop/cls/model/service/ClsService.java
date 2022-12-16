@@ -69,7 +69,7 @@ public class ClsService {
 		Student s1 = new Student();
 						// 기본 생성자
 		
-		// User 기본 생성자를 이요해서 객체 생성
+		// User 기본 생성자를 이용해서 객체 생성
 		User u1 = new User();
 		
 		// User 객체 필드 초기화 확인
@@ -81,7 +81,7 @@ public class ClsService {
 		// ==> 클래스에서 메서드에 getter/setter 미작성시
 		// 간접 접근 불가능
 		
-		User u2 = new User();
+		User u2/*지역변수*/ = new User(); /*인스턴스*/ 
 		System.out.println(u2.getUserId());
 		System.out.println(u2.getUserPw());
 		System.out.println(u2.getUserName());
@@ -123,5 +123,11 @@ public class ClsService {
 		System.out.println(u4.getUserName());
 		System.out.println(u4.getUserAge());
 		System.out.println(u4.getUserGender());
+		
+		/*User u5 = new User("test01", "testPwd", 
+				"김유저", 10, 'F');*/
+		// 생성자 접근제한자 public 외 사용 하는 경우
+		// => 사용자가 임의로 해당 클래스를 이용하여
+		// 객체를 생성 못하게 해야할 때
 	}
 }

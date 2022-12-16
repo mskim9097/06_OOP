@@ -4,7 +4,7 @@ import edu.kh.oop.cls.model.service.ClsService;
 
 public class ClsRun {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
 		ClsService clsservice = new ClsService();
 		
