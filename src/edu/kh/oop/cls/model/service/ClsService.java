@@ -81,7 +81,7 @@ public class ClsService {
 		// ==> 클래스에서 메서드에 getter/setter 미작성시
 		// 간접 접근 불가능
 		
-		User u2/*지역변수*/ = new User(); /*인스턴스*/ 
+		User u2 = new User(); 
 		System.out.println(u2.getUserId());
 		System.out.println(u2.getUserPw());
 		System.out.println(u2.getUserName());

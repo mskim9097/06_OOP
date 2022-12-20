@@ -5,7 +5,7 @@ public class User {
 	// == 속성
 	
 	// 아이디, 비밀번호, 이름, 나이, 성별
-	private String userId; //인스턴스변수
+	private String userId;
 	private String userPw;
 	private String userName;
 	private int userAge;
